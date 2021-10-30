@@ -4,9 +4,6 @@ import { useSelector } from 'react-redux';
 import { cartCreate } from '../../actions/cart';
 import { uiActiveModal, uiTempToast } from '../../actions/ui';
 import { PayPalButton } from "react-paypal-button-v2";
-import { useRef } from 'react';
-
-// const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
 
 export default function Paypal({ formValues, shipment, setLoading }) {
     const { cart } = useSelector(state => state);
@@ -83,41 +80,10 @@ export default function Paypal({ formValues, shipment, setLoading }) {
 
                         onSuccess={async (details, data) => {
                             dispatch(uiTempToast('Pago realizado con éxito'));
-                            dispatch(cartCreate());
+                            // dispatch(cartCreate());
                             order && dispatch(uiActiveModal(order));
 
                         }}
-
-
-                        // onSuccess={async (details, data) => {
-
-                        // console.log(details, data);
-                        // dispatch(uiTempToast('Pago realizado con éxito'));
-                        // dispatch(cartCreate());
-                        // data?.orderID && dispatch(uiActiveModal(data?.orderID));
-                        // let orderID;
-
-                        // try {
-
-                        //     const res = await fetch(`https://qalityvape.com/api/public/paypal/order/${data.orderID}/capture`, {
-                        //         method: 'post',
-                        //         headers: {
-                        //             'Content-Type': 'application/json',
-                        //         }
-                        //     })
-                        //     const order = await res.json();
-                        //     orderID = order?.id;
-                        //     console.log(orderID, order, res);
-
-                        // } catch (err) {
-
-                        //     console.log(err);
-                        //     dispatch(uiTempToast('Ocurrió un error con tu pago', true))
-
-                        // }
-
-                        //     return orderID
-                        // }}
                         catchError={(err) => {
                             console.log(err);
                             dispatch(uiTempToast('Ocurrió un error con tu método de pago', true))
