@@ -8,7 +8,7 @@ export async function getServerSideProps({ params: { id } }) {
     let res, data = null;
 
     try {
-        res = await fetch(`https://prettyprieto.com/api/private/sales/${id}`);
+        res = await fetch(`https://qalityvape.com/api/private/sales/${id}`);
         // console.log(res);
         data = await res.json();
     } catch (err) {

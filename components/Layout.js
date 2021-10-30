@@ -29,14 +29,12 @@ export default function Layout({ children }) {
     return (
         <>
             <Head>
-                <title>Pretty Prieto</title>
-                <meta name="description" content="Pretty Prieto tienda de ropa en línea" />
+                <title>Qality Vapes</title>
+                <meta name="description" content="Qality Vapes tienda de vapeadores en México" />
                 <link rel="icon" href="/favicon.ico" />
-                {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-                {/* <script src="https://www.paypal.com/sdk/js?client-id=test"></script> */}
             </Head>
             <Script
-                src="https://www.paypal.com/sdk/js?client-id=AaLHeBWsQYKa3NylyCSLBNpv7hZKrkn0-nqISJSKaIQc3y4ZJCmhz1E_Jn3vcIJtgev3WA3Dg6TIkTfF&currency=MXN"
+                src="https://www.paypal.com/sdk/js?client-id=ARh3QDdZsOflsDitb7v9rBAP6u3ffwSS4VU5sP0hH96gkmvwsjF5M5nNz1Au58eFrAnnBV4wteqf7f3X&currency=MXN"
                 strategy="beforeInteractive"
             />
 

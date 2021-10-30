@@ -5,8 +5,8 @@ export default function Privacidad() {
         <div className="generic-container">
 
             <Head>
-                <title>Pretty Prieto || Politica de privacidad</title>
-                <meta name="description" content="Política de privacidad de Pretty Prieto" />
+                <title>QalityVapes || Politica de privacidad</title>
+                <meta name="description" content="Política de privacidad de QalityVapes" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 

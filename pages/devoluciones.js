@@ -9,7 +9,7 @@ export default function Refunds() {
     const copyText = (e) => {
         e.stopPropagation();
 
-        navigator.clipboard.writeText('contacto@prettyprieto.com');
+        navigator.clipboard.writeText('contacto@qalityvape.com');
 
         dispatch(uiTempToast('Correo electrónico copiado al portapapeles'));
     }
@@ -22,7 +22,7 @@ export default function Refunds() {
             </h1>
 
             <p className="paraph">
-                En <strong>Pretty Prieto</strong> trabajamos para ofrecerte el mejor servicio y calidad, es por eso que TODAS NUESTRAS VENTAS SON FINALES sin excepción, para poder así grantizar que nuestros productos sean nuevos y nunca usados por alguien más.
+                En <strong>Qality vapes</strong> trabajamos para ofrecerte el mejor servicio y calidad, es por eso que TODAS NUESTRAS VENTAS SON FINALES sin excepción, para poder así grantizar que nuestros productos sean nuevos y nunca usados por alguien más.
             </p>
 
             <p className="paraph mt">
@@ -36,12 +36,12 @@ export default function Refunds() {
 
             <p className="paraph">
                 Favor de enviar un correo electrónico a <u id='email' onClick={copyText}> contacto@prettyprieto.com</u> con tu número de orden, fecha de compra, descripción del problema y fotos del producto. Nuestro equipo de soporte abrirá un caso y se pondrá en contacto con usted con el resultado de la disputa.
-                En caso de no contar con sucifiente evidencia o existan sospechas de manipulación o intento de fraude, <i>Pretty Prieto</i> podrá dar el caso como terminado.
+                En caso de no contar con sucifiente evidencia o existan sospechas de manipulación o intento de fraude, <i>Qality vapes</i> podrá dar el caso como terminado.
             </p>
 
             <p className="paraph mt">
                 <i>
-                    Pretty Prieto se reserva el derecho de cambiar estos términos y condiciones en cualquier momento y sin previo aviso
+                    Qality vapes se reserva el derecho de cambiar estos términos y condiciones en cualquier momento y sin previo aviso
                 </i>
             </p>
 

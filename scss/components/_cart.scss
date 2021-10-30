@@ -16,14 +16,14 @@
   }
 
   &__qty {
-    border-radius: 50%;
+    border: 1px solid $color-text;
     height: 2.5rem;
     width: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-danger;
-    color: white;
+    // background-color: $color-danger;
+    // color: white;
 
     & span {
       pointer-events: none;
@@ -101,7 +101,7 @@
       flex: 0 1 20%;
       overflow: hidden;
 
-      > div {
+      >div {
         position: unset !important;
       }
 
@@ -211,6 +211,7 @@
     margin-bottom: 3rem;
     font-weight: 300;
     text-align: center;
+    color: white;
   }
 
   & .form {
@@ -265,7 +266,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
 
-  & > #conektaIframeContainer div {
+  &>#conektaIframeContainer div {
     height: 100vh;
     width: 100%;
   }

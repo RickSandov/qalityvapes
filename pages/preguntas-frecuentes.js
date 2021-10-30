@@ -1,6 +1,7 @@
 
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
 import { uiTempToast } from '../actions/ui';
+import Head from 'next/head';
 
 export default function FAQ() {
 
@@ -9,7 +10,7 @@ export default function FAQ() {
     const copyText = (e) => {
         e.stopPropagation();
 
-        navigator.clipboard.writeText('contacto@prettyprieto.com');
+        navigator.clipboard.writeText('contacto@qalityvape.com');
 
         dispatch(uiTempToast('Correo electrónico copiado al portapapeles'));
     }
@@ -17,13 +18,15 @@ export default function FAQ() {
     return (
         <div className="generic-container">
 
+            <Head>
+                <title>QalityVapes || Preguntas Frecuentes</title>
+                <meta name="description" content="Política de privacidad de QalityVapes" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+
             <h1 className="title">
                 Preguntas frecuentes
             </h1>
-
-            <p className="paraph">
-                Todos nuestro productos son unisex.
-            </p>
 
             <h2 className="subtitle">
                 Envíos
@@ -33,14 +36,14 @@ export default function FAQ() {
                 ¿Cuál es el precio del envío?
             </h3>
             <p className="paraph" >
-                El costo de envío es de MXN$120.00 a cualquier estado de la república Mexicana
+                El costo de envío es de MXN$250.00 a cualquier estado de la república Mexicana
             </p>
 
             <h3 className="question">
                 ¿Tienen envíos gratis?
             </h3>
             <p className="paraph">
-                Si! Contamos con envío gratis en pedidos mayores a MXN$1,000.00 el descuento se aplica automáticamente
+                Si! Contamos con envío gratis en pedidos mayores a MXN$1,500.00 el descuento se aplica automáticamente
             </p>
 
             <h3 className="question">
@@ -51,7 +54,7 @@ export default function FAQ() {
             </p>
             <p className="paraph">
                 En caso de no recibir tu pedido después del tiempo establecido, envíanos un correo a <u onClick={copyText} >
-                    contacto@prettyprieto.com
+                    contacto@qalityvape.com
                 </u>
             </p>
 
@@ -88,17 +91,8 @@ export default function FAQ() {
                 ¿Qué puedo hacer si proporcioné mal mi información de envío?
             </h3>
             <p className="paraph">
-                Deberás envíar inmediatamente un correo electrónico a <u onClick={copyText} >contacto@prettyprieto.com</u> con el número de pedido y con tu información de envío o contacto actualizada.
+                Deberás envíar inmediatamente un correo electrónico a <u onClick={copyText} >contacto@qalityvape.com</u> con el número de pedido y con tu información de envío o contacto actualizada.
             </p>
-
-            <h3 className="question">
-                ¿Puedo cambiar la talla de mi producto?
-            </h3>
-            <p className="paraph">
-                Podrás solicitar un cambio de talla siempre y cuando tu pedido no haya sido enviado. Deberás enviar una solicitud de cambio de talla a <u onClick={copyText} >contacto@prettyprieto.com</u> nosotros nos pondremos en contacto contigo lo más pronto posible.
-            </p>
-
-
 
         </div>
     )

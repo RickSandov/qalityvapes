@@ -7,8 +7,8 @@
 }
 
 .product {
-    width: 1200px;
-    max-width: 90%;
+    width: 1800px;
+    max-width: 95%;
     display: flex;
     justify-content: space-between;
 
@@ -58,13 +58,13 @@
             & .description {
                 margin: 3rem 0;
                 font-size: 1.6rem;
+                line-height: 2;
             }
 
             & .btn-add {
-                background-color: $color-secondary;
+                background-color: $color-text;
                 border: none;
                 outline: none;
-                border-radius: .8rem;
                 color: white;
                 padding: 2rem 4rem;
                 cursor: pointer;
@@ -72,7 +72,7 @@
                 margin-top: 3rem;
 
                 &:hover {
-                    background-color: darken($color-secondary, 10);
+                    background-color: darken($color-text, 10);
                 }
 
             }

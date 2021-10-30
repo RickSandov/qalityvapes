@@ -34,7 +34,7 @@ export default function ProductResume({ product, seeOrder }) {
                             className="delete"> &times;
                         </span>
                         <div className="image">
-                            <Image alt={name} src={'https://prettyprieto.com' + img} layout='fill' className='img' ></Image>
+                            <Image alt={name} src={`https://qalityvape.com${img}`} layout='fill' className='img' ></Image>
                         </div></>
                 )
             }

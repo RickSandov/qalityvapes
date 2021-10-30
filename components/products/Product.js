@@ -13,7 +13,6 @@ export default function Product({ product }) {
     const { _id, name, description, price, imgs } = product;
 
     const [counter, setCounter] = useState(1);
-    const [size, setSize] = useState('S');
 
     const addToCart = () => {
 
@@ -22,8 +21,7 @@ export default function Product({ product }) {
             qty: counter,
             price,
             img: imgs[0],
-            name,
-            size
+            name
         }
 
         dispatch(cartAddItem(item));
@@ -37,7 +35,7 @@ export default function Product({ product }) {
             <div className="product">
 
                 <div className="product__img-box">
-                    <Image alt={name} src={`https://prettyprieto.com${imgs[0]}`} layout='fill' className='img' priority ></Image>
+                    <Image alt={name} src={`https://qalityvape.com${imgs[0]}`} layout='fill' className='img' priority ></Image>
                 </div>
 
                 <div className="product__info">
@@ -52,20 +50,6 @@ export default function Product({ product }) {
                             <p className="price">
                                 MXN ${price.toLocaleString()}
                             </p>
-                        </div>
-                        <div className="item">
-                            <p className="item__title">
-                                talla
-                            </p>
-                            <div className="item__list">
-                                {
-                                    tallas.map(talla => (
-                                        <span
-                                            onClick={() => setSize(talla)}
-                                            className={`${size === talla && 'active'}`} key={talla} >{talla}</span>
-                                    ))
-                                }
-                            </div>
                         </div>
                         <div className="item">
                             <p className="item__title">

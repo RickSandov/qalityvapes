@@ -7,8 +7,8 @@ export default function Terminos() {
         <div className="generic-container">
 
             <Head>
-                <title>Pretty Prieto || Términos y condiciones</title>
-                <meta name="description" content="Términos y condiciones de Pretty Prieto" />
+                <title>QalityVapes || Términos y condiciones</title>
+                <meta name="description" content="Términos y condiciones de QalityVapes" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
@@ -17,7 +17,7 @@ export default function Terminos() {
             </h1>
 
             <p className="paraph">
-                Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones en su totalidad. No continúes usando el sitio web (Nombre de la tienda) si no aceptas todos los términos y condiciones establecidos en esta página.
+                Al acceder a este sitio web, asumimos que aceptas estos términos y condiciones en su totalidad. No continúes usando el sitio web QalityVapes si no aceptas todos los términos y condiciones establecidos en esta página.
             </p>
 
             <p className="paraph mt">
@@ -49,7 +49,7 @@ export default function Terminos() {
             </h2>
 
             <p className="paraph">
-                A menos que se indique lo contrario, Pretty Prieto y/o sus licenciatarios les pertenecen los derechos de propiedad intelectual de todo el material en Pretty Prieto.
+                A menos que se indique lo contrario, QalityVapes y/o sus licenciatarios les pertenecen los derechos de propiedad intelectual de todo el material en QalityVapes.
             </p>
 
         </div>

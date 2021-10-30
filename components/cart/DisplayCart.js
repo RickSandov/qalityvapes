@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
+import Image from 'next/image';
 
 export default function DisplayCart() {
 
@@ -16,10 +17,8 @@ export default function DisplayCart() {
             <Link href={`/carrito`}>
 
                 <a className="display-cart">
-                    <svg>
-                        <use href="/icons/cart.svg#cart" ></use>
-                    </svg>
-                    <p>bolsa</p>
+                    <Image src="/img/cart.png" alt="Vercel Logo" width={30} height={30} priority />
+                    <p>Carrito</p>
                     <div className="display-cart__qty">
                         <span>
                             {cart.length}

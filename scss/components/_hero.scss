@@ -3,12 +3,12 @@
     max-width: 100%;
     overflow: hidden;
     // height: 40rem;
-    max-height: 60rem;
+    max-height: 45rem;
     margin: 0 auto 2rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
 
     >div {
         position: unset !important;
@@ -26,6 +26,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    & .info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
     }
 
 }

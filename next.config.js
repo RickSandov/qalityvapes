@@ -2,7 +2,7 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['prettyprieto.com'],
+    domains: ['qalityvape.com'],
   },
   defaultLocale: 'es-MX',
 }
