@@ -74,6 +74,7 @@ export default function Paypal({ formValues, shipment, setLoading }) {
                                 return data.order.id;
                             }).catch(err => {
                                 dispatch(uiTempToast('Ocurrió un error con tu pago', true))
+                                console.log(err);
                             })
                         }}
 

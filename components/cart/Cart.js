@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import ClientInfo from './ClientInfo';
 import ProductResume from './ProductResume';
-import Script from 'next/script';
 
 export default function Cart() {
   const { cart } = useSelector(state => state);
 
   const cartLength = cart.length;
+
+  console.log(cart);
 
   const [total, setTotal] = useState(0);
 
