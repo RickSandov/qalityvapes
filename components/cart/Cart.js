@@ -8,8 +8,6 @@ export default function Cart() {
 
   const cartLength = cart.length;
 
-  console.log(cart);
-
   const [total, setTotal] = useState(0);
 
   useEffect(() => {
