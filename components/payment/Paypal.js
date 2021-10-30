@@ -41,7 +41,7 @@ export default function Paypal({ formValues, shipment, setLoading }) {
                         createOrder={(data, actions) => {
                             const { name, phone, street, col, zip, extNumber, intNumber, mail } = formValues;
 
-                            return fetch('https://prettyprieto.com/api/public/paypal/order', {
+                            return fetch('https://qalityvape.com/api/public/paypal/order', {
                                 method: 'post',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ export default function Paypal({ formValues, shipment, setLoading }) {
 
                         // try {
 
-                        //     const res = await fetch(`https://prettyprieto.com/api/public/paypal/order/${data.orderID}/capture`, {
+                        //     const res = await fetch(`https://qalityvape.com/api/public/paypal/order/${data.orderID}/capture`, {
                         //         method: 'post',
                         //         headers: {
                         //             'Content-Type': 'application/json',
