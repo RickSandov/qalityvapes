@@ -68,11 +68,13 @@ export default function Paypal({ formValues, shipment, setLoading }) {
                                     }
                                 })
                             }).then(res => {
+                                console.log(res);
                                 return res.json();
-                            }).then(({ order, sale }) => {
-                                setOrder(sale?._id);
+                            }).then((data) => {
+                                console.log(data)
+                                setOrder(data.sale?._id);
 
-                                return order.id;
+                                return data.order.id;
                             }).catch(err => {
                                 dispatch(uiTempToast('Ocurrió un error con tu pago', true))
                             })
