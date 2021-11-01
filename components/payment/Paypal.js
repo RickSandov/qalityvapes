@@ -81,7 +81,7 @@ export default function Paypal({ formValues, shipment, setLoading }) {
 
                         onSuccess={async (details, data) => {
                             dispatch(uiTempToast('Pago realizado con éxito'));
-                            // dispatch(cartCreate());
+                            dispatch(cartCreate());
                             order && dispatch(uiActiveModal(order));
 
                         }}
