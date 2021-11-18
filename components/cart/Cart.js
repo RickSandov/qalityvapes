@@ -35,18 +35,16 @@ export default function Cart() {
             <div className='price-resume'>
               <span>
                 Subtotal:
-                <strong> MXN${total.toLocaleString()}</strong>{' '}
+                <strong> ${total.toLocaleString()}</strong>{' '}
               </span>
               <p className={`shipment ${+total > 1000 && 'free'}`}>
                 Envío:
-                <strong>
-                  {+total > 1000 ? <del> MXN$120</del> : ' MXN$120'}
-                </strong>
+                <strong>{+total > 1000 ? <del> $120</del> : ' $120'}</strong>
               </p>
               <p className='resume-total'>
                 Total:
                 <strong>
-                  MXN$
+                  $
                   {+total < 1000
                     ? (total + 120).toLocaleString()
                     : total.toLocaleString()}
